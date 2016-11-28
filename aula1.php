@@ -1,5 +1,7 @@
 <?php
 
+
+//
 $nome = "Edir";
 $idade = 12;
 
