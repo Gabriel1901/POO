@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Classe Generica do motor
+ * Classe Generica para motor
  * 
  * @author Gabriel
  * @link https://github.com/Gabriel1901/POO  
@@ -9,7 +9,8 @@
 
 class Motor
 {
-    private $potencia = 1.0;
+    const POTENCIA = 1.0;
+    
     private $tipoCombustivel = "Flex";
     private $aceleracao = 0;
     
@@ -21,7 +22,7 @@ class Motor
     public function acelerar($valor = 0)
     {
         $this->aceleracao = $valor;
-        $potencia = $valor * $this->potencia;
+        $potencia = $valor * self::POTENCIA; // "::" estaticos
         return $potencia;
     }
     
